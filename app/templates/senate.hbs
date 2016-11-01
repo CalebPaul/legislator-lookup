@@ -1,6 +1,6 @@
 <ul class="list-group">
   <li class="list-group-item active">Senate Committees</li>
   {{#each model as |committee|}}
-    <li class="list-group-item"><a href="/subcommittee/{{committee.committee_id}}">{{committee.name}}</a></li>
+    <li class="list-group-item">{{committee.name}} <span class="pull-right">{{#link-to 'subcommittee' committee.committee_id}}View Subcommittees{{/link-to}}</span></li>
   {{/each}}
 </ul>

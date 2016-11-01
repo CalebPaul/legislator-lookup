@@ -11,5 +11,5 @@ export default Ember.Route.extend({
       console.log('response: '+responseJSON.results);
       return responseJSON.results;
    });
-  }
+ }
 });

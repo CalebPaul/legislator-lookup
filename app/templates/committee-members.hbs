@@ -1,1 +1,6 @@
-{{outlet}}
+<ul class="list-group">
+  <li class="list-group-item active">Committee Members</li>
+  {{#each model as |member|}}
+    <li class="list-group-item">{{member.legislator.first_name}} {{member.legislator.last_name}} -<small> Term ends {{moment-from-now member.legislator.term_end interval=1000}}</small><span class="pull-right"><a href="mailto:{{member.legislator.oc_email}}">Email</a></span></li>
+  {{/each}}
+</ul>

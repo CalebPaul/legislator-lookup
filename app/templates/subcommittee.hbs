@@ -1,0 +1,10 @@
+<ul class="list-group">
+  <li class="list-group-item active">Subcommittees</li>
+  {{#if model}}
+    {{#each model as |subcommittee|}}
+      <li class="list-group-item">{{subcommittee.name}}</li>
+    {{/each}}
+  {{else}}
+    <li class="list-group-item">No Subcommittees</li>
+  {{/if}}
+</ul>

@@ -1,0 +1,6 @@
+<ul class="list-group">
+  <li class="list-group-item active">House Committees</li>
+  {{#each model as |committee|}}
+    <li class="list-group-item"><a href="/subcommittee/{{committee.committee_id}}">{{committee.name}}</a></li>
+  {{/each}}
+</ul>

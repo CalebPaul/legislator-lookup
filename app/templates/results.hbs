@@ -1,0 +1,8 @@
+<ul>
+  {{#each model.legislators as |legislator|}}
+    {{log 'age' legislator.birthday}}
+    <li> {{legislator.first_name}} {{legislator.last_name}} <small>{{moment-calendar legislator.birthday}}</small><br>Contact: <a href=  {{legislator.contact_form}}>{{legislator.contact_form}}</a></li>
+  {{/each}}
+
+  {{model.birthday}}
+</ul>
